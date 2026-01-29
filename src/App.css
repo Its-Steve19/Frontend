@@ -1,0 +1,14 @@
+.app {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.app-main-content {
+  position: inherit;
+  width: 80dvw;
+}
+
+.routes {
+  padding: 1rem 0;
+}

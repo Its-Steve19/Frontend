@@ -1,0 +1,128 @@
+.bid-container {
+  position: absolute;
+  padding: 0 0.5rem;
+  width: 38%;
+  right: 1%;
+  height: 75vh;
+  background-color: var(--secondary-color);
+  overflow-y: auto;
+  max-width: 30rem;
+}
+
+.bidder-heading {
+  position: sticky;
+  padding: 0.5rem;
+  z-index: 1;
+  background-color: var(--secondary-color);
+  top: 0;
+}
+
+.heading {
+  font-weight: bold;
+  padding: 0.5rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.heading span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}
+
+.freelancer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+
+.freelancer {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  background-color: var(--bg-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.freelancer-container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.freelancer-elements {
+  display: flex;
+  gap: 1rem;
+  /* justify-content: space-between; */
+}
+
+.freelancer-elements article:nth-child(2) {
+  color: #fff;
+}
+
+.bid-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+}
+
+.bid-actions button {
+  width: 7rem;
+  background-color: var(--accent-sec-color);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .bid-container {
+    width: 45% !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .bid-container {
+    width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bid-container {
+    position: fixed;
+    bottom: 0% !important;
+    right: 0%;
+    width: 100% !important;
+    border: solid 1px;
+    border-bottom: none;
+    border-radius: 4px;
+  }
+
+  .hide-bidder {
+    height: 0;
+    opacity: 0;
+    transition: 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  }
+
+  .show-bidder {
+    height: 80%;
+    opacity: 1;
+    transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  }
+}

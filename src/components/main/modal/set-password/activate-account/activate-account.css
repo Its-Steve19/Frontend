@@ -1,0 +1,58 @@
+.activate-account {
+  box-sizing: border-box;
+  width: 100dvw;
+  min-height: 70dvh;
+  max-height: fit-content;
+  position: absolute;
+  top: 12.5%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  z-index: 9;
+  padding: 1rem;
+  text-align: center;
+}
+
+.otp-input {
+  position: relative;
+  width: 10rem;
+  font-size: 2rem;
+  height: 3rem;
+  border: solid 1px var(--secondary-color);
+  border-radius: 4px;
+  outline-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 2px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.regenerate-otp {
+  border: none;
+  border-radius: 2rem;
+  color: #fff;
+  padding: 0.8rem;
+  font-size: var(--fontsize-normal);
+}
+
+.error-box {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .activate-account {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,47 @@
+.payment-box {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem !important;
+  border-radius: 4px;
+  color: white;
+}
+.close-pay {
+  cursor: pointer;
+}
+
+.App-Background,
+.HeightObserverProvider-container {
+  background-color: var(--bg-color) !important;
+}
+
+.paypal-button-label-container img {
+  object-fit: contain;
+  border: 1rem;
+}
+.payment-info,
+.paypal-payment-modal,
+.stripe-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stripe-button button {
+  height: 36px;
+  background: #556cd6;
+  border-radius: 4px;
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.stripe-button button:hover {
+  background-color: #677ee6;
+}
+
+.stripe-form {
+  width: 100%;
+}

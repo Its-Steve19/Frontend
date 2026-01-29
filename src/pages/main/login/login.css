@@ -1,0 +1,128 @@
+.login {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  width: 100dvw;
+  position: relative;
+  color: #fff;
+  display: flex;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.login-box {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 28rem;
+  gap: 2rem;
+  border-radius: 4px;
+  border: solid 2px var(--bg-color);
+}
+
+.heading {
+  color: #fff;
+}
+
+.login-form {
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--bg-color);
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.login-form .login-content {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-form div input {
+  width: 100%;
+  padding: 1rem;
+  border: solid 1px #f5f5f5;
+  border-radius: 4px;
+  outline-color: var(--secondary-color);
+  color: gray;
+}
+
+.login-content input::placeholder {
+  color: var(--text-color) !important;
+}
+
+.username-icon,
+.password-icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: var(--secondary-color) !important;
+}
+
+#username,
+#password {
+  padding-left: 2.8rem;
+}
+
+.password-icon-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+  color: var(--secondary-color);
+}
+
+.submit-credentials {
+  position: relative;
+  width: 100%;
+}
+
+.submit-credentials button {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  letter-spacing: 2px;
+  height: 3.5rem;
+}
+
+.register-prompt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center !important;
+}
+
+.register-prompt span a,
+.reset-password a {
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--accent-sec-color) !important;
+}
+
+.register-prompt span a:hover,
+.reset-password a:hover {
+  text-decoration: underline;
+}
+
+.scaleloader {
+  width: 100%;
+  height: inherit;
+  color: #fff !important;
+}

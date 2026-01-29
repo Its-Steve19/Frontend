@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box !important;
+  --fontsize-normal: 0.9rem;
+  --fontsize-small: 0.9rem;
+  --primary-color: #0360d1;
+  --secondary-color: #374151;
+  --bg-color: #404c5e;
+  --accent-sec-color: #7fc2f5;
+  --complementary: #eb7100;
+  --text-color: #535354;
+  --background: #f7fafc;
+  --green-var: #14a014;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    --fontsize-normal: 0.85rem;
+    --fontsize-small: 0.85rem;
+  }
+}
+
+:root {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: var(--fontsize-normal);
+  color: var(--text-color);
+  letter-spacing: 0.2px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--secondary-color);
+}
+
+button {
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  font-size: var(--fontsize-normal);
+  width: fit-content;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Skeleton animation */
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: var(--bg-color);
+  }
+
+  100% {
+    background-color: #727d8d;
+  }
+}
+
+/* overlay */
+
+.overlay {
+  background-color: aliceblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.6;
+  z-index: 8;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(187, 187, 187); /* color of the scrollbar handle */
+  border-radius: 6px; /* roundness of the scrollbar handle */
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the scrollbar track */
+}
+
+#rating-input {
+  color: #f7fafc;
+}

@@ -1,0 +1,1 @@
+const fetchNext = (page, setPage) => {};

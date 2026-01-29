@@ -1,0 +1,115 @@
+.order-creation {
+  box-sizing: border-box;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+}
+
+.order-creation-details .order-required-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
+  color: #fff;
+}
+
+.order-creation-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-required-details div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-creation-details .order-required-details input,
+.order-creation-details .order-required-details select,
+#amount {
+  padding: 0.7rem 0.5rem;
+  border-radius: 8px;
+  border: solid 1px var(--secondary-color);
+  font-size: var(--fontsize-normal);
+  outline-color: var(--secondary-color);
+  color: #fff;
+  background-color: var(--bg-color);
+  width: 100%;
+}
+
+#amount {
+  padding-left: 2rem;
+}
+
+.instructions-box,
+.amount-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.dollar-icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.amount-input {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.instructions-box div textarea {
+  position: inherit;
+  width: 100%;
+  border-radius: 8px;
+  font-size: var(--fontsize-normal);
+  border: solid 1px var(--secondary-color);
+  outline-color: var(--secondary-color);
+  padding: 0.7rem 0.5rem;
+  color: #fff;
+  background-color: var(--bg-color);
+}
+
+.more,
+.home-btn,
+.next,
+.complete-order,
+.bidders,
+.rating-btn,
+.regenerate-otp,
+.save,
+.go-to-order,
+.create-task-helper,
+.create-task {
+  border-radius: 8px;
+  border: solid 1px var(--accent-sec-color);
+  background-color: var(--accent-sec-color);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text-limit-helper {
+  color: orange;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: small;
+}
+::placeholder {
+  color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .order-creation {
+    width: 100dvw;
+  }
+}

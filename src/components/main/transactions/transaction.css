@@ -1,0 +1,34 @@
+.transactions h1 {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.transaction-table {
+  position: inherit;
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 900px;
+}
+
+thead {
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: small;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: var(--bg-color);
+}
+
+.transaction {
+  font-size: smaller;
+}

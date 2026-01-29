@@ -1,0 +1,32 @@
+.expired-token,
+.bad-token {
+  display: flex;
+  height: 100dvh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.token-box {
+  position: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.regenerate-link {
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 2rem;
+  color: #fff;
+}
+
+.logo-token {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}

@@ -1,0 +1,124 @@
+.dashboard,
+.main-available,
+.main-in-progress,
+.completed,
+.anim-box {
+  position: relative;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.next-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.order-content {
+  box-sizing: border-box;
+  position: relative;
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  min-height: 5rem;
+  gap: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  background-color: var(--bg-color);
+  color: #fff;
+  /* background-color: var(--background); */
+  /* border: solid 1px var(--secondary-color); */
+}
+
+.order-content .title-box {
+  text-align: start;
+  width: 100%;
+  height: 80%;
+}
+
+.title-box article {
+  font-weight: 700;
+}
+
+.order-content:hover {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.bottom-box {
+  position: sticky;
+  bottom: 1% !important;
+  width: 100%;
+  font-size: var(--fontsize-small);
+  display: flex;
+  justify-content: space-between;
+}
+
+.bidding-box article {
+  position: inherit;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+article .bid-count {
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bottom-box .fx-start {
+  font-size: var(--fontsize-small);
+  display: flex;
+  position: relative;
+  gap: 3rem;
+}
+
+.fx-start span {
+  color: var(--primary-color);
+}
+
+.bottom-box .fx-end {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+}
+
+.deadline {
+  background-color: var(--green-var);
+  /* background-color: rgb(0, 128, 0); */
+  padding: 0 0.5rem;
+  color: white;
+  border-radius: 2rem;
+  width: fit-content;
+  font-size: normal;
+}
+
+/*BIG  */
+/* @media screen and (min-width: 1600px) {
+  .order-content {
+    width: 20%;
+  }
+} */
+
+@media screen and (max-width: 1024px) {
+  .dashboard,
+  .main-available,
+  .main-in-progress,
+  .completed {
+    width: 100dvw;
+  }
+}

@@ -1,0 +1,27 @@
+.solved {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 2rem;
+  min-height: 3rem !important;
+  /*  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80dvh;
+}
+
+.coming-soon,
+.coming-soon div {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.coming-soon button {
+  background-color: var(--accent-sec-color);
+  border-radius: 4px;
+}
